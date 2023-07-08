@@ -23,8 +23,26 @@
 <img src='https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20230702_215927.jpg' alt='' />
 
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**目录**
+
+- [前言](#%E5%89%8D%E8%A8%80)
+- [功能介绍](#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
+- [使用前提](#%E4%BD%BF%E7%94%A8%E5%89%8D%E6%8F%90)
+- [使用教程](#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+  - [第一步，创建应用](#%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8)
+  - [第二步，部署项目](#%E7%AC%AC%E4%BA%8C%E6%AD%A5%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE)
+    - [docker部署](#docker%E9%83%A8%E7%BD%B2)
+    - [二进制部署](#%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%83%A8%E7%BD%B2)
+  - [第三步，完善企微配置](#%E7%AC%AC%E4%B8%89%E6%AD%A5%E5%AE%8C%E5%96%84%E4%BC%81%E5%BE%AE%E9%85%8D%E7%BD%AE)
+- [配置文件说明](#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)
+- [常见问题](#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+- [感谢](#%E6%84%9F%E8%B0%A2)
+- [赞赏](#%E8%B5%9E%E8%B5%8F)
+- [贡献者列表](#%E8%B4%A1%E7%8C%AE%E8%80%85%E5%88%97%E8%A1%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 前言
 
