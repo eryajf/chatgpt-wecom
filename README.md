@@ -304,5 +304,15 @@ azure_openai_token: "xxxxxxx"
 
 <div align="center">
 <!-- readme: collaborators,contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/eryajf">
+            <img src="https://avatars.githubusercontent.com/u/33259379?v=4" width="75;" alt="eryajf"/>
+            <br />
+            <sub><b>二丫讲梵</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: collaborators,contributors -end -->
 </div>
