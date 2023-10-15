@@ -24,7 +24,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 **目录**
 
 - [前言](#%E5%89%8D%E8%A8%80)
@@ -33,7 +32,7 @@
 - [使用教程](#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
   - [第一步，创建应用](#%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8)
   - [第二步，部署项目](#%E7%AC%AC%E4%BA%8C%E6%AD%A5%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE)
-    - [docker 部署](#docker%E9%83%A8%E7%BD%B2)
+    - [docker 部署](#docker-%E9%83%A8%E7%BD%B2)
     - [二进制部署](#%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%83%A8%E7%BD%B2)
   - [第三步，完善企微配置](#%E7%AC%AC%E4%B8%89%E6%AD%A5%E5%AE%8C%E5%96%84%E4%BC%81%E5%BE%AE%E9%85%8D%E7%BD%AE)
 - [配置文件说明](#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)
