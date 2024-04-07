@@ -135,7 +135,7 @@ version: "3"
 services:
   chatgpt:
     container_name: chatgpt
-    image: registry.cn-hangzhou.aliyuncs.com/ali_eryajf/chatgpt-wecom
+    image: registry.cn-hangzhou.aliyuncs.com/eryajf/chatgpt-wecom
     restart: always
     environment:
       LOG_LEVEL: "info" # 应用的日志级别 info/debug
@@ -298,10 +298,3 @@ azure_openai_token: "xxxxxxx"
 ## 赞赏
 
 如果觉得这个项目对你有帮助，你可以请作者[喝杯咖啡 ☕️](https://wiki.eryajf.net/reward/)
-
-## 贡献者列表
-
-<div align="center">
-<!-- readme: collaborators,contributors -start -->
-<!-- readme: collaborators,contributors -end -->
-</div>

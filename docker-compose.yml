@@ -3,7 +3,7 @@ version: '3'
 services:
   chatgpt:
     container_name: chatgpt
-    image: registry.cn-hangzhou.aliyuncs.com/ali_eryajf/chatgpt-wecom
+    image: registry.cn-hangzhou.aliyuncs.com/eryajf/chatgpt-wecom
     restart: always
     environment:
       LOG_LEVEL: "info" # 应用的日志级别 info/debug
@@ -12,8 +12,8 @@ services:
       AGENT_SECRET: "" # 应用秘钥
       RECEIVE_MSG_TOKEN: "" # API接收消息的token
       RECEIVE_MSG_KEY: "" # API接收消息的key
-      APIKEY: xxxxxx  # 你的 api_key
-      BASE_URL: ""  # 如果你使用官方的接口地址 https://api.openai.com，则留空即可，如果你想指定请求url的地址，可通过这个参数进行配置，注意需要带上 http 协议
+      APIKEY: xxxxxx # 你的 api_key
+      BASE_URL: "" # 如果你使用官方的接口地址 https://api.openai.com，则留空即可，如果你想指定请求url的地址，可通过这个参数进行配置，注意需要带上 http 协议
       MODEL: "gpt-3.5-turbo-0613" # 指定模型，默认为 gpt-3.5-turbo , 可选参数有： "gpt-4-32k-0613", "gpt-4-32k-0314", "gpt-4-32k", "gpt-4-0613", "gpt-4-0314", "gpt-4", "gpt-3.5-turbo-16k-0613", "gpt-3.5-turbo-16k", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-0301", "gpt-3.5-turbo"，如果使用gpt-4，请确认自己是否有接口调用白名单，如果你是用的是azure，则该配置项可以留空或者直接忽略
       SESSION_TIMEOUT: 600 # 会话超时时间,默认600秒,在会话时间内所有发送给机器人的信息会作为上下文
       MAX_QUESTION_LEN: 2048 # 最大问题长度，默认4096 token，正常情况默认值即可，如果使用gpt4-8k或gpt4-32k，可根据模型token上限修改。
@@ -23,7 +23,7 @@ services:
       DEFAULT_MODE: "单聊" # 指定默认的对话模式，可根据实际需求进行自定义，如果不设置，默认为单聊，即无上下文关联的对话模式
       MAX_REQUEST: 0 # 单人单日请求次数上限，默认为0，即不限制
       PORT: 8000 # 指定服务启动端口，默认为 8000，容器化部署时，不需要调整，一般在二进制宿主机部署时，遇到端口冲突时使用，如果run_mode为stream模式，则可以忽略该配置项
-      SERVICE_URL: ""  # 指定服务的地址，就是当前服务可供外网访问的地址(或者直接理解为你配置在企微回调那里的地址)
+      SERVICE_URL: "" # 指定服务的地址，就是当前服务可供外网访问的地址(或者直接理解为你配置在企微回调那里的地址)
       # 以下 ALLOW_USERS、DENY_USERS、VIP_USERS、ADMIN_USERS 配置中填写的是用户的userid 比如 ["1301691029702722","1301691029702733"]，这个信息需要在企微管理后台的通讯录当中获取：https://work.weixin.qq.com/wework_admin/frame#contacts
       ALLOW_USERS: "" # 哪些用户可以进行对话，如果留空，则表示允许所有用户，如果要限制，则填写用户的userid
       DENY_USERS: "" # 哪些用户不可以进行对话，如果留空，则表示允许所有用户（如allow_user有配置，需满足相应条件），如果要限制，则列表中写用户的userid，黑名单优先级高于白名单
@@ -35,7 +35,28 @@ services:
       AZURE_RESOURCE_NAME: "" # Azure OpenAi API 资源名称，比如 "openai"
       AZURE_DEPLOYMENT_NAME: "" # Azure OpenAi API 部署名称，比如 "openai"
       AZURE_OPENAI_TOKEN: "" # Azure token
-      HELP: "Commands:\n\n=================================\n\n🙋 单聊 👉 单独聊天，缺省\n\n🗣 串聊 👉 带上下文聊天\n\n🔃 重置 👉 重置带上下文聊天\n\n🚀 帮助 👉 显示帮助信息\n\n=================================\n\n💪 Power By [eryajf/chatgpt-wecom](https://github.com/eryajf/chatgpt-wecom)" # 帮助信息，放在配置文件，可供自定义
+      HELP: "Commands:
+
+
+        =================================
+
+
+        🙋 单聊 👉 单独聊天，缺省
+
+
+        🗣 串聊 👉 带上下文聊天
+
+
+        🔃 重置 👉 重置带上下文聊天
+
+
+        🚀 帮助 👉 显示帮助信息
+
+
+        =================================
+
+
+        💪 Power By [eryajf/chatgpt-wecom](https://github.com/eryajf/chatgpt-wecom)" # 帮助信息，放在配置文件，可供自定义
     volumes:
       - ./data:/app/data
     ports:
