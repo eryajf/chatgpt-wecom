@@ -39,7 +39,6 @@
 - [常见问题](#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 - [感谢](#%E6%84%9F%E8%B0%A2)
 - [赞赏](#%E8%B5%9E%E8%B5%8F)
-- [贡献者列表](#%E8%B4%A1%E7%8C%AE%E8%80%85%E5%88%97%E8%A1%A8)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
